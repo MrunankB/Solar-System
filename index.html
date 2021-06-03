@@ -14,5 +14,67 @@
       <div class="header-container">
         <h1 class="main-heading">Pocket Solar System</h1>
 
-        <h2 class="credits">By <a href="https://twitter.com/GameDev46" target="01Blank">GameDev46</a></h2>
+        <h2 class="credits">By <a href="https://github.com/FlashLeap" target="01Blank">Mrunank Bathe</a></h2>
       </div>
+    
+      <div class="star sun"></div>
+      <div class="mercury planet"></div>
+      <div class="venus planet"></div>
+      <div class="earth planet">
+        <div class="moon planet"></div>
+      </div>
+      <div class="mars planet"></div>
+      <div class="jupiter planet"></div>
+      <div class="saturn planet"></div>
+      <div class="uranus planet"></div>
+      <div class="neptune planet"></div>
+
+      <ul id="orbit-container" class="hiding">
+        <li class="mercury-orbit orbit-path"></li>
+        <li class="venus-orbit orbit-path"></li>
+        <li class="earth-orbit orbit-path"></li>
+        <li class="mars-orbit orbit-path"></li>
+        <li class="jupiter-orbit orbit-path"></li>
+        <li class="saturn-orbit orbit-path"></li>
+        <li class="uranus-orbit orbit-path"></li>
+        <li class="neptune-orbit orbit-path"></li>
+      </ul>
+
+    <div class="options" id="options">
+      <h1 class="options-title" id="options-title">Options</h1>
+
+        <div class="spacing" id="space"></div>
+
+      <h2 class="label" title="760320 times quicker than usual">Speed</h2>
+
+        <div class="slider-container" id="slider-container">
+          <input type="range" max="500" min="10" step="1" value="500" id="speed" class="slider" oninput="getInputOfSpeed(this)">
+        </div>
+
+          <br>
+
+        <h2 class="label">Show Orbits</h2>
+
+        <input type="checkbox" class="checkbox" id="checkbox" onclick="saveCheckState()">
+
+          <br>
+
+        <button class="options-button" id="options-button" onclick="setupSpeedsOfPlanets(380160000)">Default to realtime</button>
+
+          <br>
+
+        <button class="options-button" id="reset" onclick="resetData()">Reset</button>
+    </div>
+
+
+    
+      <ul class="info-container" id="info-container">
+        <button class="info-item" id="button1" onclick="showUserInfo(0)">Mercury</button>
+        <button class="info-item" id="button2" onclick="showUserInfo(1)">Venus</button>
+        <button class="info-item" id="button3" onclick="showUserInfo(2)">Earth</button>
+        <button class="info-item" id="button4" onclick="showUserInfo(3)">Mars</button>
+        <button class="info-item" id="button5" onclick="showUserInfo(4)">Jupiter</button>
+        <button class="info-item" id="button6" onclick="showUserInfo(5)">Saturn</button>
+        <button class="info-item" id="button7" onclick="showUserInfo(6)">Uranus</button>
+        <button class="info-item" id="button8" onclick="showUserInfo(7)">Neptune</button>
+
