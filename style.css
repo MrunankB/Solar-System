@@ -710,3 +710,21 @@ a:hover::after {
   -webkit-touch-callout: none;
   -ms-user-select: none;
 }
+
+.wrapper-hidden {
+  position: absolute;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  outline: none;
+  border: none; 
+  opacity: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -ms-user-select: none;
+}
