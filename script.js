@@ -180,3 +180,15 @@ function updateStateOfSystem(item) {
     orbitsManager.classList.add('hiding');
   }
 }
+
+// Show the information of the current planets
+function showUserInfo(num) {
+  
+  info_title.innerText = capitaliseFirstLetter(names[num]);
+
+  info_text.innerText = text[num];
+}
+
+function capitaliseFirstLetter(word) {
+ return word.substring(0, 1).toUpperCase() + word.slice(1);
+}
